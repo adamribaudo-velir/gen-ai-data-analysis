@@ -1,1 +1,6 @@
-Dataset	Model Publisher	Model Name	Model Version	Prompt	Result	Score (1-10)
+Date of Test	Dataset	Model Publisher	Model Name	Model Version	Prompt	Result	Pass/Fail
+7/26/2024	sin.csv	Anthropic	Claude	3.5 Sonnet	I'm uploading a CSV file containing rows of data for each week of the year. Can you interpret the data and tell me if you see any trends?	"Both dimension_a and dimension_b show a cyclical pattern throughout the year, resembling a sine wave….Inverse Relationship:
+
+There's still an inverse relationship between dimension_a and dimension_b, but it's more pronounced and rhythmic in this data set."	Pass
+7/26/2024	linear.csv	OpenAI	ChatGpt	4o	I'm uploading a CSV file containing rows of data for each week of the year. Can you interpret the data and tell me if you see any trends?	Both dimensions exhibit an increasing trend in their metric values over the weeks.	Fail
+7/26/2024	linear.csv	Anthropic	Claude	3.5 Sonnet	I'm uploading a CSV file containing rows of data for each week of the year. Can you interpret the data and tell me if you see any trends?	There appears to be an inverse relationship between dimension_a and dimension_b.	Pass

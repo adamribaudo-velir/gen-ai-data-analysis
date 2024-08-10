@@ -42,5 +42,42 @@ ggplot(data = df_lin, aes(x = week_index, y = metric, color = dimension)) +
 
 write.csv(df_lin,"linear.csv")
 
+# inverse lines, no noise
+df_lin <- data.frame(
+  week_index = seq(1:52),
+  initial_data = (seq(from = 0,to = 1, length.out=52)) * 100
+)
+
+df_lin$dimension_a <- df_lin$initial_data
+df_lin$dimension_b <- df_lin$initial_data * -1 + 100 
+
+df_lin <- df_lin %>% select(week_index, dimension_a, dimension_b) %>% 
+  pivot_longer(cols = !week_index, names_to = "dimension", values_to = "metric")
+
+ggplot(data = df_lin, aes(x = week_index, y = metric, color = dimension)) + 
+  geom_line() +
+  theme_minimal()
+
+write.csv(df_lin,"linear_no_noise.csv")
+
+# noise
+df_noise <- data.frame(
+  week_index = seq(1:52),
+  noise_a = sample(10:30, 52, replace = TRUE),
+  noise_b = sample(10:30, 52, replace = TRUE)
+)
+
+df_noise$dimension_a <- df_noise$noise_a
+df_noise$dimension_b <- df_noise$noise_b
+
+df_noise <- df_noise %>% select(week_index, dimension_a, dimension_b) %>% 
+  pivot_longer(cols = !week_index, names_to = "dimension", values_to = "metric")
+
+ggplot(data = df_noise, aes(x = week_index, y = metric, color = dimension)) + 
+  geom_line() +
+  theme_minimal()
+
+write.csv(df_noise,"noise.csv")
+
 
 

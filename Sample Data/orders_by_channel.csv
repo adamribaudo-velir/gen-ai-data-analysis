@@ -1,53 +1,157 @@
-"","week","total_orders"
-"1",1,71
-"2",2,73
-"3",3,71
-"4",4,71
-"5",5,70
-"6",6,70
-"7",7,75
-"8",8,72
-"9",9,72
-"10",10,71
-"11",11,70
-"12",12,72
-"13",13,71
-"14",14,73
-"15",15,73
-"16",16,71
-"17",17,75
-"18",18,73
-"19",19,70
-"20",20,70
-"21",21,73
-"22",22,75
-"23",23,70
-"24",24,73
-"25",25,73
-"26",26,75
-"27",27,75
-"28",28,74
-"29",29,71
-"30",30,71
-"31",31,72
-"32",32,72
-"33",33,70
-"34",34,72
-"35",35,72
-"36",36,74
-"37",37,70
-"38",38,71
-"39",39,72
-"40",40,73
-"41",41,72
-"42",42,72
-"43",43,74
-"44",44,71
-"45",45,75
-"46",46,72
-"47",47,74
-"48",48,75
-"49",49,72
-"50",50,72
-"51",51,75
-"52",52,75
+week,Channel,Orders
+1,Organic Search Orders,54
+1,Paid Search Orders,0
+1,Other Orders,17
+2,Organic Search Orders,51
+2,Paid Search Orders,0
+2,Other Orders,22
+3,Organic Search Orders,55
+3,Paid Search Orders,0
+3,Other Orders,16
+4,Organic Search Orders,50
+4,Paid Search Orders,0
+4,Other Orders,21
+5,Organic Search Orders,50
+5,Paid Search Orders,0
+5,Other Orders,20
+6,Organic Search Orders,55
+6,Paid Search Orders,0
+6,Other Orders,15
+7,Organic Search Orders,52
+7,Paid Search Orders,0
+7,Other Orders,23
+8,Organic Search Orders,57
+8,Paid Search Orders,0
+8,Other Orders,15
+9,Organic Search Orders,53
+9,Paid Search Orders,0
+9,Other Orders,19
+10,Organic Search Orders,56
+10,Paid Search Orders,0
+10,Other Orders,15
+11,Organic Search Orders,52
+11,Paid Search Orders,0
+11,Other Orders,18
+12,Organic Search Orders,51
+12,Paid Search Orders,0
+12,Other Orders,21
+13,Organic Search Orders,55
+13,Paid Search Orders,0
+13,Other Orders,16
+14,Organic Search Orders,60
+14,Paid Search Orders,0
+14,Other Orders,13
+15,Organic Search Orders,58
+15,Paid Search Orders,0
+15,Other Orders,15
+16,Organic Search Orders,53
+16,Paid Search Orders,0
+16,Other Orders,18
+17,Organic Search Orders,56
+17,Paid Search Orders,0
+17,Other Orders,19
+18,Organic Search Orders,60
+18,Paid Search Orders,0
+18,Other Orders,13
+19,Organic Search Orders,52
+19,Paid Search Orders,0
+19,Other Orders,18
+20,Organic Search Orders,57
+20,Paid Search Orders,0
+20,Other Orders,13
+21,Organic Search Orders,56
+21,Paid Search Orders,0
+21,Other Orders,17
+22,Organic Search Orders,57
+22,Paid Search Orders,0
+22,Other Orders,18
+23,Organic Search Orders,58
+23,Paid Search Orders,0
+23,Other Orders,12
+24,Organic Search Orders,54
+24,Paid Search Orders,0
+24,Other Orders,19
+25,Organic Search Orders,56
+25,Paid Search Orders,0
+25,Other Orders,17
+26,Organic Search Orders,54
+26,Paid Search Orders,0
+26,Other Orders,21
+27,Organic Search Orders,0
+27,Paid Search Orders,55
+27,Other Orders,20
+28,Organic Search Orders,0
+28,Paid Search Orders,58
+28,Other Orders,16
+29,Organic Search Orders,0
+29,Paid Search Orders,53
+29,Other Orders,18
+30,Organic Search Orders,0
+30,Paid Search Orders,54
+30,Other Orders,17
+31,Organic Search Orders,0
+31,Paid Search Orders,56
+31,Other Orders,16
+32,Organic Search Orders,0
+32,Paid Search Orders,50
+32,Other Orders,22
+33,Organic Search Orders,0
+33,Paid Search Orders,50
+33,Other Orders,20
+34,Organic Search Orders,0
+34,Paid Search Orders,54
+34,Other Orders,18
+35,Organic Search Orders,0
+35,Paid Search Orders,53
+35,Other Orders,19
+36,Organic Search Orders,0
+36,Paid Search Orders,56
+36,Other Orders,18
+37,Organic Search Orders,0
+37,Paid Search Orders,54
+37,Other Orders,16
+38,Organic Search Orders,0
+38,Paid Search Orders,57
+38,Other Orders,14
+39,Organic Search Orders,0
+39,Paid Search Orders,59
+39,Other Orders,13
+40,Organic Search Orders,0
+40,Paid Search Orders,54
+40,Other Orders,19
+41,Organic Search Orders,0
+41,Paid Search Orders,60
+41,Other Orders,12
+42,Organic Search Orders,0
+42,Paid Search Orders,55
+42,Other Orders,17
+43,Organic Search Orders,0
+43,Paid Search Orders,52
+43,Other Orders,22
+44,Organic Search Orders,0
+44,Paid Search Orders,59
+44,Other Orders,12
+45,Organic Search Orders,0
+45,Paid Search Orders,60
+45,Other Orders,15
+46,Organic Search Orders,0
+46,Paid Search Orders,53
+46,Other Orders,19
+47,Organic Search Orders,0
+47,Paid Search Orders,55
+47,Other Orders,19
+48,Organic Search Orders,0
+48,Paid Search Orders,54
+48,Other Orders,21
+49,Organic Search Orders,0
+49,Paid Search Orders,50
+49,Other Orders,22
+50,Organic Search Orders,0
+50,Paid Search Orders,55
+50,Other Orders,17
+51,Organic Search Orders,0
+51,Paid Search Orders,50
+51,Other Orders,25
+52,Organic Search Orders,0
+52,Paid Search Orders,58
+52,Other Orders,17

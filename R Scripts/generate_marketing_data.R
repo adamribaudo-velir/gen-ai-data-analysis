@@ -1,26 +1,24 @@
 library(tidyverse)
 
 #### Paid search
-
-spend <-  c(rep(0,26), sample(150:200, 26, replace = TRUE))
-clicks <- c(rep(0,26), sample(100:120, 26, replace = TRUE))
+#spend <-  c(rep(0,26), sample(150:200, 26, replace = TRUE))
+#clicks <- c(rep(0,26), sample(100:120, 26, replace = TRUE))
 paid_search_orders <- c(rep(0,26), sample(50:60, 26, replace = TRUE))
 
 df_paid_search <- data.frame(
   week = seq(1:52),
-  spend = spend,
-  clicks = clicks,
+  #spend = spend,
+  #clicks = clicks,
   paid_search_orders = paid_search_orders
-) %>%
-  rename(`Paid Search Orders`=paid_search_orders, `Paid Search Clicks`=clicks, `Paid Search Spend` = spend) %>%
-  pivot_longer(cols = !week, names_to = "Metric", values_to = "Value")
+)
 
 
-ggplot(data = df_paid_search, aes(x = week, y = Value, color = Metric)) + 
+ggplot(data = df_paid_search, aes(x = week, y = paid_search_orders)) + 
   geom_line() +
-  theme_minimal() + ggtitle("Paid Search Metrics")
+  theme_minimal() + ggtitle("Paid Search Orders") +
+  labs(y = "Paid Search Orders", x = "Week")
 
-write.csv(df_paid_search,"paid_search_metrics.csv")
+write.csv(df_paid_search,"paid_search_orders.csv")
 
 #### ORDERS
 
@@ -54,5 +52,22 @@ ggplot(data = df_orders_by_channel, aes(x = week, y = Orders, color = Channel)) 
   geom_line() +
   theme_minimal() + ggtitle("Orders by Channel")
 
-write.csv(df_orders,"orders_by_channel.csv")
+write.csv(df_orders_by_channel,"orders_by_channel.csv")
+
+
+#### ORGANIC ORDERS
+organic_search_orders <-  c(sample(50:60, 26, replace = TRUE),rep(0,26))
+
+df_organic_orders <- data.frame(
+  week = seq(1:52),
+  organic_search_orders = organic_search_orders
+)
+
+
+ggplot(data = df_organic_orders, aes(x = week, y = organic_search_orders)) + 
+  geom_line() +
+  theme_minimal() + ggtitle("Organic Search Orders") +
+  labs(y = "Organic Search Orders", x = "Week")
+
+write.csv(df_organic_orders,"organic_search_orders.csv")
 
